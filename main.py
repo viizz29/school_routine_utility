@@ -126,16 +126,16 @@ def menu():
     while True:
 
         print()
-        print("_____________________________________")
-        print("|     Schedule Manager               |")
-        print("|Manage School Routines With Ease    |")
-        print("|____________________________________|")
+        app_name = env.get('APP_NAME')
+        print("_"*(len(app_name)+50))
+        print(("%25s%"+str(len(app_name))+"s%25s")%(" ",app_name, " "))
+        print("_"*(len(app_name)+50))
         print()
 
-
-        
-        print("E. Exit")
-        choice = input("Enter your choice: ")
+        print(" "*25 + "E. Exit")
+        print()
+        print(" "*25, end="Enter your choice: ")
+        choice = input()
         if choice == "e" or choice == 'E':
             print("stopping the websocket server ...")
             wsserver.stop()
