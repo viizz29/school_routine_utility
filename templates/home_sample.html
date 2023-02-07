@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=800, initial-scale=1.0">
+    <title>Class Schedule Manager</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        .page-header{
+            background-color: rgba(100,100,100,0.1);
+            border-radius: 10px 10px;
+            padding: 10px;
+        }
+        .section{
+            background-color: rgba(0, 0, 255, 0.1);
+            padding: 20px 20px;
+            border-radius: 10px 10px;
+        }
+        .section-header{
+            padding: 5px 5px;
+            border-top: 1px solid black;
+            border-bottom: 5px solid rgba(0, 0, 255, 0.1);
+        }
+        .teacher
+        {
+            color: white;
+            display: inline-block;
+            background-color: rgba(0, 0, 100, 0.1);
+            text-align: center;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 10px 10px;
+            font-size: 25px;
+        }
+
+        .teacher:hover{
+            background-color: rgba(100,100,100,0.1);
+        }
+
+
+        .std
+        {
+            color: white;
+            display: inline-block;
+            background-color: rgba(0, 0, 100, 0.1);
+            text-align: center;
+            width: 100px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 10px 10px;
+            font-size: 25px;
+        }
+        .std:hover{
+            background-color: rgba(100,100,100,0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="section">
+        <center>
+            <div class="page-header">
+                <h1>DAV PUBLIC SCHOOL, PATELNAGAR</h1>
+                <h2>ClASS SCHEDULE SCHEDULE</h2>
+            </div>
+            
+            <hr width="50%">
+            <a href="/absence_form"><div class="teacher">Generate Substitution List For Today</div></a>
+            <a href="/absence_form"><div class="teacher">Generate Substitution List For Tomorrow</div></a>
+        </center>
+            <h3 class="section-header">Schedule of Teachers</h3>
+            <div>
+                
+                <a href="/teacher/bijoy"><div class="teacher">Bijoy</div></a>
+                <a href="/teacher/nikesh"><div class="teacher">Nikesh</div></a>
+            </div>
+            <h3 class="section-header">Schedule of Classrooms</h3>
+            <div>
+                <a href="/standard/I"><div class="std">I</div></a>
+                <a href="/standard/II"><div class="std">II</div></a>
+                <a href="/standard/III"><div class="std">III</div></a>
+                <a href="/standard/IV"><div class="std">IV</div></a>
+                
+            </div>
+    </div>    
+</body>
+</html>
